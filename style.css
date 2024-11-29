@@ -68,3 +68,12 @@ body{
     object-fit: cover;
     margin-bottom: 10px;
 }
+
+/*Estilos de pie de pagina*/
+
+footer{
+    background-color: rgb(140, 106, 76);
+    color: antiquewhite;
+    text-align: center;
+    padding: 10px;
+}
