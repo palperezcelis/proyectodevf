@@ -25,3 +25,23 @@ body{
 .nav-links li{
     margin-left: 20px;
 }
+
+.hero{
+    background-image: url("https://www.clarin.com/2023/09/29/LhBsAAQCm_2000x1500__1.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 100px;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h2{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
