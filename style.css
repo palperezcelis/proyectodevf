@@ -1,10 +1,24 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: "MedievalSharp", cursive;
+    font-weight: 500px;
+    font-style: normal;
 }
 
-body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+.logo{
+    display: flex;
+}
+
+.logo img{
+    width: 100px;
+}
+
+.logo h1{
+    display: flex;
+    align-items: center;
+    padding: 20px;
 }
 
 .navbar{
@@ -12,7 +26,13 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: bisque;
+    background-color: rgb(20, 10, 3);
+    color: bisque;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: bisque;
 }
 
 .nav-links{
@@ -27,11 +47,11 @@ body{
 }
 
 .hero{
-    background-image: url("https://www.clarin.com/2023/09/29/LhBsAAQCm_2000x1500__1.jpg");
+    background-image: url("https://i.pinimg.com/736x/8b/dd/4c/8bdd4c93c7ac288a2cc798024f7a6263.jpg");
     background-size: cover;
     background-position: center;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 100px;
 }
 
@@ -46,15 +66,22 @@ body{
     margin-bottom: 20px;
 }
 
+.hero p{
+    font-weight: 500px;
+}
+
 .featured-products{
-    pad: 50px;
+    padding: 25px;
     text-align: center;
+    background-color: rgb(20,10,3);
+    color: bisque;
 }
 
 .product-list{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding: 20px;
 }
 
 .product{
@@ -64,7 +91,7 @@ body{
 
 .product img{
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
     margin-bottom: 10px;
 }
