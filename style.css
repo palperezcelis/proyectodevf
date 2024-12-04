@@ -70,6 +70,18 @@
     font-weight: 500px;
 }
 
+.button-container{
+    padding-top: 20px;
+}
+
+.menu-button{
+    margin: 15px;
+    padding: 5px;
+    border-radius: 15%;
+    background-color: rgb(20, 10, 3);
+    color: bisque;
+}
+
 .featured-products{
     padding: 25px;
     text-align: center;
@@ -96,6 +108,28 @@
     margin-bottom: 10px;
 }
 
+.postres{
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(20,10,3);
+    color: bisque;
+    padding: 50px;
+    text-align: center;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 20px;
+}
+
+.postre img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+
 /*Estilos de pie de pagina*/
 
 footer{
@@ -103,4 +137,31 @@ footer{
     color: antiquewhite;
     text-align: center;
     padding: 10px;
+}
+
+.team{
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(20,10,3);
+    color: bisque;
+}
+
+.team-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.member{
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.member img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 50%;
 }
