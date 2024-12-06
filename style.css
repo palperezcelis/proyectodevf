@@ -147,3 +147,38 @@ footer{
     border-radius: 4px;
     cursor: pointer;
 }
+
+/*Cookies*/
+
+.galletas{
+    padding: 50px;
+    text-align: center;
+}
+
+.grid-cookies{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 260px);
+    gap: 20px;
+    grid-template-areas:
+    "cookie1 cookie1 cookie2 cookie3"
+    "cookie1 cookie1 cookie4 cookie5";
+}
+
+.cookie{
+    border: 1px solid gray;
+    padding: 20px;
+}
+
+.cookie img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.cookie:nth-child(1) {grid-area: cookie1;}
+.cookie:nth-child(2) {grid-area: cookie2;}
+.cookie:nth-child(3) {grid-area: cookie3;}
+.cookie:nth-child(4) {grid-area: cookie4;}
+.cookie:nth-child(5) {grid-area: cookie5;}
