@@ -26,13 +26,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: rgb(20, 10, 3);
-    color: bisque;
+    background-color: rgba(59, 33, 23, 255);
+    color: rgba(240, 226, 197, 255);
 }
 
 .navbar a{
     text-decoration: none;
-    color: bisque;
+    color: rgba(240, 226, 197, 255);
 }
 
 .nav-links{
@@ -51,7 +51,7 @@
     background-size: cover;
     background-position: center;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: rgba(240, 226, 197, 255);
     padding: 100px;
 }
 
@@ -78,32 +78,63 @@
     margin: 15px;
     padding: 5px;
     border-radius: 15%;
-    background-color: rgb(20, 10, 3);
-    color: bisque;
+    background-color: rgba(59,33,23,255);
+    color: rgba(240, 226, 197, 255);
 }
 
-.featured-products, .postres, .team {
-    padding: 50px;
+.featured-gallery{
+    display: flex;
+    height: 400px;
+}
+
+.featured-gallery img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.featured-gallery img:hover{
+    cursor:crosshair;
+    width: 300px;
+    opacity: 1;
+    filter:contrast(120%);
+}
+
+.featured-products{
+    padding: 10px;
     text-align: center;
-    background-color: rgb(20,10,3);
-    color: bisque;
-    padding: 50px;
+    background-color: rgba(59,33,23,255);
+    color: rgba(240, 226, 197, 255);
     text-align: center;
 }
 
-.product-list, .postre-container, .team-container{
+.featured-products h2{
+    padding: 20px;
+}
+
+.postres, .team, .cookies, .drinks {
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(59,33,23,255);
+    color: rgba(240, 226, 197, 255);
+    text-align: center;
+}
+
+.product-list, .postre-container, .team-container, .cookies-container{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 20px;
 }
 
-.product, .postre, .member{
+.product, .postre, .member, .cookie{
     width: 300px;
     margin-bottom: 30px;
 }
 
-.product img, .postre img{
+.product img, .postre img, .cookies img{
     width: 100%;
     height: 300px;
     object-fit: cover;
@@ -112,8 +143,8 @@
 }
 
 .member img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     margin-bottom: 10px;
     border-radius: 50%;
@@ -122,8 +153,8 @@
 /*Estilos de pie de pagina*/
 
 footer{
-    background-color: rgb(140, 106, 76);
-    color: antiquewhite;
+    background-color: rgba(176,129,79,255);
+    color: rgba(240, 226, 197, 255);
     text-align: center;
     padding: 10px;
 }
@@ -135,50 +166,15 @@ footer{
 
 .newsletter input[type="email"]{
     padding: 8px;
-    border: 2px solid beige;
+    border: 2px solid rgba(240,226,197,255);
     border-radius: 4px;
     margin: 10px;
 }
 
 .newsletter button[type="submit"]{
-    background-color: beige;
+    background-color: rgba(206,192,178,255);
     padding: 8px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
-
-/*Cookies*/
-
-.galletas{
-    padding: 50px;
-    text-align: center;
-}
-
-.grid-cookies{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 260px);
-    gap: 20px;
-    grid-template-areas:
-    "cookie1 cookie1 cookie2 cookie3"
-    "cookie1 cookie1 cookie4 cookie5";
-}
-
-.cookie{
-    border: 1px solid gray;
-    padding: 20px;
-}
-
-.cookie img{
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-
-.cookie:nth-child(1) {grid-area: cookie1;}
-.cookie:nth-child(2) {grid-area: cookie2;}
-.cookie:nth-child(3) {grid-area: cookie3;}
-.cookie:nth-child(4) {grid-area: cookie4;}
-.cookie:nth-child(5) {grid-area: cookie5;}
