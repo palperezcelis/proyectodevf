@@ -26,7 +26,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: rgba(59, 33, 23, 255);
+    background-color: rgba(36,12,16,255);
     color: rgba(240, 226, 197, 255);
 }
 
@@ -74,7 +74,7 @@
     padding-top: 20px;
 }
 
-.menu-button{
+.menu-button, .home-button{
     margin: 15px;
     padding: 5px;
     border-radius: 15%;
@@ -184,4 +184,132 @@ footer{
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+/*Style socuial media icons*/
+
+.fa{
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    background: #000000;
+    color: white;
+}
+
+.fa:hover{
+    opacity: 0.7;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/*Nosotros flip cards*/
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.flip-card{
+    display: flex;
+    height: 400px;
+    width: 250px;
+    perspective: 1000px;
+    cursor: pointer;
+    transform: translateZ(0);
+    margin: 0;
+    padding: 0;
+}
+
+.flip-card-inner{
+    width: 100%;
+    height: 100%;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 24px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.flip-card-front img{
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+.flip-card-back{
+    background: rgba(206,192,178,255);
+    color: rgba(36,12,16,255);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Misión, valores y filosofía*/
+
+.mision, .valores, .filosofia{
+    padding: 20px;
+}
+
+.mision p, .valores ul, .filosofia p{
+    padding: 5px;
+    font-size: larger;
+}
+
+/*Formulario de contacto*/
+
+.form-container{
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    display: flex;
+    background-color: rgba(240,226,197,255);
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: rgba(176,129,79,255);
+    color: rgba(240,226,197,255);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(117,61,41,255);
 }
